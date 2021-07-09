@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, redirect
 import pyttsx3
-from textForm import TextForm
+from talkative.app.textForm import TextForm
 import os
 
 app = Flask(__name__, template_folder='templates')
@@ -20,4 +20,3 @@ def my_form_post():
     friend.runAndWait()
     friend.startLoop(False)
     return redirect('/')
-app.run()
