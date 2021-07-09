@@ -20,6 +20,4 @@ def my_form_post():
     friend.runAndWait()
     friend.startLoop(False)
     return redirect('/')
-app.run(
-    debug=True,
-  )
+app.run()
