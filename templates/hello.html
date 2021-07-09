@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Talkative</title>
+    <link rel="icon" type="image/png" href='favicon.png'/>
+
+</head>
+<h1 style="font-family: sans-serif;
+position: absolute;
+  left: 45%;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  font-size: 1em;
+  color: #FFF;">TALKATIVE</h1>
+<body style="background: navy" >
+<form method="POST" novalidate style="  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: rgba(0,0,0,.1);
+  padding: 100px;">
+    <label style=" font-family: sans-serif;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-size: .8em;
+  color: #FFF;"> {{form.textTospeech.label}}</label>
+    <p >
+        {{form.textTospeech(style = "display: inline-block;
+  border: none;
+  text-align: left;
+  box-shadow: 3px 2px rgba(121, 83, 210,.3 );
+  padding: 10px;
+  width: 420px;
+  margin: 10px 0;
+  background: transparent;
+  color: #FFF;")}}
+    </p>
+    <br>
+    <p>
+        {{form.submit(style = "  background: transparent;
+  color: #FFF;
+  width: 420px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 20px 0;
+  padding: 10px 30px;
+  border: 2px solid #FFF;")}}
+    </p>
+</form>
+</body>
+<div style="   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: #FFF;
+  font-family: sans-serif;
+  text-transform: uppercase;
+    letter-spacing: 3px;
+
+  background: rgba(0,0,0,.1);
+   text-align: center;">
+  <p>Made with ♥ by <a style="color:#FFF; font-family: sans-serif; text-decoration: none;" href="https://imerghichi.github.io/">Imane</a></p>
+</div>
+</html>
