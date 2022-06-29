@@ -20,3 +20,14 @@ def my_form_post():
     friend.runAndWait()
     friend.startLoop(False)
     return redirect('/')
+@app.route('/deliverActCode', methods=['POST'])
+def deliverActCode():
+    return {"responseInfo": {
+   "responseUID": "user0016-lgkj-7777-7777-123456789aze",
+   "resultID": "ProceedWithSuccess",
+   "errorCode": "00000",
+   "errorDescription": "ProceedWithSuccess"
+},
+    "stepUpMethodExpirationTime": "2010-02-08T11:04:50.001Z",
+    "activationCodeLength": "10"
+}
